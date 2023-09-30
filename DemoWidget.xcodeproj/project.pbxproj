@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5295C9722AC7F7710066183B /* DemoWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295C9712AC7F7710066183B /* DemoWidgetApp.swift */; };
+		5295C9742AC7F7710066183B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295C9732AC7F7710066183B /* ContentView.swift */; };
+		5295C9762AC7F7720066183B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295C9752AC7F7720066183B /* Assets.xcassets */; };
+		5295C9792AC7F7720066183B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295C9782AC7F7720066183B /* Preview Assets.xcassets */; };
+		5295C9862AC7F7E10066183B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9852AC7F7E10066183B /* WidgetKit.framework */; };
+		5295C9882AC7F7E10066183B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9872AC7F7E10066183B /* SwiftUI.framework */; };
+		5295C98B2AC7F7E10066183B /* ClockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295C98A2AC7F7E10066183B /* ClockWidgetBundle.swift */; };
+		5295C98D2AC7F7E10066183B /* ClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295C98C2AC7F7E10066183B /* ClockWidget.swift */; };
+		5295C98F2AC7F7E20066183B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295C98E2AC7F7E20066183B /* Assets.xcassets */; };
+		5295C9932AC7F7E20066183B /* ClockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5295C9832AC7F7E10066183B /* ClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52C493D72AC7FB1A00D1548B /* KCC-Ganpan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52C493D62AC7FB1A00D1548B /* KCC-Ganpan.otf */; };
+		52C493DD2AC7FBF700D1548B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9852AC7F7E10066183B /* WidgetKit.framework */; };
+		52C493DE2AC7FBF700D1548B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9872AC7F7E10066183B /* SwiftUI.framework */; };
+		52C493E12AC7FBF700D1548B /* WeekDayWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C493E02AC7FBF700D1548B /* WeekDayWidgetBundle.swift */; };
+		52C493E32AC7FBF700D1548B /* WeekDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C493E22AC7FBF700D1548B /* WeekDayWidget.swift */; };
+		52C493E52AC7FBF800D1548B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C493E42AC7FBF800D1548B /* Assets.xcassets */; };
+		52C493E92AC7FBF800D1548B /* WeekDayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 52C493DC2AC7FBF700D1548B /* WeekDayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52C493EF2AC7FC9B00D1548B /* KCC-Ganpan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52C493EE2AC7FC9B00D1548B /* KCC-Ganpan.otf */; };
+		52C493F52AC80DD800D1548B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9852AC7F7E10066183B /* WidgetKit.framework */; };
+		52C493F62AC80DD800D1548B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5295C9872AC7F7E10066183B /* SwiftUI.framework */; };
+		52C493F92AC80DD800D1548B /* OceanWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C493F82AC80DD800D1548B /* OceanWidgetBundle.swift */; };
+		52C493FB2AC80DD800D1548B /* OceanWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C493FA2AC80DD800D1548B /* OceanWidget.swift */; };
+		52C493FD2AC80DD900D1548B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C493FC2AC80DD900D1548B /* Assets.xcassets */; };
+		52C494012AC80DD900D1548B /* OceanWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 52C493F42AC80DD800D1548B /* OceanWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5295C9912AC7F7E20066183B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5295C9662AC7F7710066183B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5295C9822AC7F7E10066183B;
+			remoteInfo = ClockWidgetExtension;
+		};
+		52C493E72AC7FBF800D1548B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5295C9662AC7F7710066183B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C493DB2AC7FBF700D1548B;
+			remoteInfo = WeekDayWidgetExtension;
+		};
+		52C493FF2AC80DD900D1548B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5295C9662AC7F7710066183B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C493F32AC80DD800D1548B;
+			remoteInfo = OceanWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5295C9972AC7F7E20066183B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5295C9932AC7F7E20066183B /* ClockWidgetExtension.appex in Embed Foundation Extensions */,
+				52C493E92AC7FBF800D1548B /* WeekDayWidgetExtension.appex in Embed Foundation Extensions */,
+				52C494012AC80DD900D1548B /* OceanWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5295C96E2AC7F7710066183B /* DemoWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5295C9712AC7F7710066183B /* DemoWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWidgetApp.swift; sourceTree = "<group>"; };
+		5295C9732AC7F7710066183B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5295C9752AC7F7720066183B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5295C9782AC7F7720066183B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5295C9832AC7F7E10066183B /* ClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5295C9852AC7F7E10066183B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5295C9872AC7F7E10066183B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5295C98A2AC7F7E10066183B /* ClockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetBundle.swift; sourceTree = "<group>"; };
+		5295C98C2AC7F7E10066183B /* ClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidget.swift; sourceTree = "<group>"; };
+		5295C98E2AC7F7E20066183B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5295C9902AC7F7E20066183B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C493D62AC7FB1A00D1548B /* KCC-Ganpan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Ganpan.otf"; sourceTree = "<group>"; };
+		52C493DC2AC7FBF700D1548B /* WeekDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeekDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C493E02AC7FBF700D1548B /* WeekDayWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayWidgetBundle.swift; sourceTree = "<group>"; };
+		52C493E22AC7FBF700D1548B /* WeekDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayWidget.swift; sourceTree = "<group>"; };
+		52C493E42AC7FBF800D1548B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C493E62AC7FBF800D1548B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C493EE2AC7FC9B00D1548B /* KCC-Ganpan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-Ganpan.otf"; sourceTree = "<group>"; };
+		52C493F42AC80DD800D1548B /* OceanWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OceanWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C493F82AC80DD800D1548B /* OceanWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanWidgetBundle.swift; sourceTree = "<group>"; };
+		52C493FA2AC80DD800D1548B /* OceanWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanWidget.swift; sourceTree = "<group>"; };
+		52C493FC2AC80DD900D1548B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C493FE2AC80DD900D1548B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5295C96B2AC7F7710066183B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5295C9802AC7F7E10066183B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5295C9882AC7F7E10066183B /* SwiftUI.framework in Frameworks */,
+				5295C9862AC7F7E10066183B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493D92AC7FBF700D1548B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493DE2AC7FBF700D1548B /* SwiftUI.framework in Frameworks */,
+				52C493DD2AC7FBF700D1548B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493F12AC80DD800D1548B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493F62AC80DD800D1548B /* SwiftUI.framework in Frameworks */,
+				52C493F52AC80DD800D1548B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5295C9652AC7F7710066183B = {
+			isa = PBXGroup;
+			children = (
+				5295C9702AC7F7710066183B /* DemoWidget */,
+				5295C9892AC7F7E10066183B /* ClockWidget */,
+				52C493DF2AC7FBF700D1548B /* WeekDayWidget */,
+				52C493F72AC80DD800D1548B /* OceanWidget */,
+				5295C9842AC7F7E10066183B /* Frameworks */,
+				5295C96F2AC7F7710066183B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5295C96F2AC7F7710066183B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5295C96E2AC7F7710066183B /* DemoWidget.app */,
+				5295C9832AC7F7E10066183B /* ClockWidgetExtension.appex */,
+				52C493DC2AC7FBF700D1548B /* WeekDayWidgetExtension.appex */,
+				52C493F42AC80DD800D1548B /* OceanWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5295C9702AC7F7710066183B /* DemoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5295C9712AC7F7710066183B /* DemoWidgetApp.swift */,
+				5295C9732AC7F7710066183B /* ContentView.swift */,
+				5295C9752AC7F7720066183B /* Assets.xcassets */,
+				5295C9772AC7F7720066183B /* Preview Content */,
+			);
+			path = DemoWidget;
+			sourceTree = "<group>";
+		};
+		5295C9772AC7F7720066183B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5295C9782AC7F7720066183B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5295C9842AC7F7E10066183B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5295C9852AC7F7E10066183B /* WidgetKit.framework */,
+				5295C9872AC7F7E10066183B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5295C9892AC7F7E10066183B /* ClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				52C493D12AC7F96500D1548B /* Font */,
+				5295C98A2AC7F7E10066183B /* ClockWidgetBundle.swift */,
+				5295C98C2AC7F7E10066183B /* ClockWidget.swift */,
+				5295C98E2AC7F7E20066183B /* Assets.xcassets */,
+				5295C9902AC7F7E20066183B /* Info.plist */,
+			);
+			path = ClockWidget;
+			sourceTree = "<group>";
+		};
+		52C493D12AC7F96500D1548B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				52C493D62AC7FB1A00D1548B /* KCC-Ganpan.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		52C493DF2AC7FBF700D1548B /* WeekDayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				52C493ED2AC7FC8800D1548B /* Font */,
+				52C493E02AC7FBF700D1548B /* WeekDayWidgetBundle.swift */,
+				52C493E22AC7FBF700D1548B /* WeekDayWidget.swift */,
+				52C493E42AC7FBF800D1548B /* Assets.xcassets */,
+				52C493E62AC7FBF800D1548B /* Info.plist */,
+			);
+			path = WeekDayWidget;
+			sourceTree = "<group>";
+		};
+		52C493ED2AC7FC8800D1548B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				52C493EE2AC7FC9B00D1548B /* KCC-Ganpan.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		52C493F72AC80DD800D1548B /* OceanWidget */ = {
+			isa = PBXGroup;
+			children = (
+				52C493F82AC80DD800D1548B /* OceanWidgetBundle.swift */,
+				52C493FA2AC80DD800D1548B /* OceanWidget.swift */,
+				52C493FC2AC80DD900D1548B /* Assets.xcassets */,
+				52C493FE2AC80DD900D1548B /* Info.plist */,
+			);
+			path = OceanWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5295C96D2AC7F7710066183B /* DemoWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5295C97C2AC7F7720066183B /* Build configuration list for PBXNativeTarget "DemoWidget" */;
+			buildPhases = (
+				5295C96A2AC7F7710066183B /* Sources */,
+				5295C96B2AC7F7710066183B /* Frameworks */,
+				5295C96C2AC7F7710066183B /* Resources */,
+				5295C9972AC7F7E20066183B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5295C9922AC7F7E20066183B /* PBXTargetDependency */,
+				52C493E82AC7FBF800D1548B /* PBXTargetDependency */,
+				52C494002AC80DD900D1548B /* PBXTargetDependency */,
+			);
+			name = DemoWidget;
+			productName = DemoWidget;
+			productReference = 5295C96E2AC7F7710066183B /* DemoWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5295C9822AC7F7E10066183B /* ClockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5295C9942AC7F7E20066183B /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */;
+			buildPhases = (
+				5295C97F2AC7F7E10066183B /* Sources */,
+				5295C9802AC7F7E10066183B /* Frameworks */,
+				5295C9812AC7F7E10066183B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockWidgetExtension;
+			productName = ClockWidgetExtension;
+			productReference = 5295C9832AC7F7E10066183B /* ClockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		52C493DB2AC7FBF700D1548B /* WeekDayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C493EA2AC7FBF800D1548B /* Build configuration list for PBXNativeTarget "WeekDayWidgetExtension" */;
+			buildPhases = (
+				52C493D82AC7FBF700D1548B /* Sources */,
+				52C493D92AC7FBF700D1548B /* Frameworks */,
+				52C493DA2AC7FBF700D1548B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeekDayWidgetExtension;
+			productName = WeekDayWidgetExtension;
+			productReference = 52C493DC2AC7FBF700D1548B /* WeekDayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		52C493F32AC80DD800D1548B /* OceanWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C494042AC80DD900D1548B /* Build configuration list for PBXNativeTarget "OceanWidgetExtension" */;
+			buildPhases = (
+				52C493F02AC80DD800D1548B /* Sources */,
+				52C493F12AC80DD800D1548B /* Frameworks */,
+				52C493F22AC80DD800D1548B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OceanWidgetExtension;
+			productName = OceanWidgetExtension;
+			productReference = 52C493F42AC80DD800D1548B /* OceanWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5295C9662AC7F7710066183B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5295C96D2AC7F7710066183B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5295C9822AC7F7E10066183B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					52C493DB2AC7FBF700D1548B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					52C493F32AC80DD800D1548B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5295C9692AC7F7710066183B /* Build configuration list for PBXProject "DemoWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5295C9652AC7F7710066183B;
+			productRefGroup = 5295C96F2AC7F7710066183B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5295C96D2AC7F7710066183B /* DemoWidget */,
+				5295C9822AC7F7E10066183B /* ClockWidgetExtension */,
+				52C493DB2AC7FBF700D1548B /* WeekDayWidgetExtension */,
+				52C493F32AC80DD800D1548B /* OceanWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5295C96C2AC7F7710066183B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5295C9792AC7F7720066183B /* Preview Assets.xcassets in Resources */,
+				5295C9762AC7F7720066183B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5295C9812AC7F7E10066183B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493D72AC7FB1A00D1548B /* KCC-Ganpan.otf in Resources */,
+				5295C98F2AC7F7E20066183B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493DA2AC7FBF700D1548B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493EF2AC7FC9B00D1548B /* KCC-Ganpan.otf in Resources */,
+				52C493E52AC7FBF800D1548B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493F22AC80DD800D1548B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493FD2AC80DD900D1548B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5295C96A2AC7F7710066183B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5295C9742AC7F7710066183B /* ContentView.swift in Sources */,
+				5295C9722AC7F7710066183B /* DemoWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5295C97F2AC7F7E10066183B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5295C98D2AC7F7E10066183B /* ClockWidget.swift in Sources */,
+				5295C98B2AC7F7E10066183B /* ClockWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493D82AC7FBF700D1548B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493E32AC7FBF700D1548B /* WeekDayWidget.swift in Sources */,
+				52C493E12AC7FBF700D1548B /* WeekDayWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C493F02AC80DD800D1548B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C493FB2AC80DD800D1548B /* OceanWidget.swift in Sources */,
+				52C493F92AC80DD800D1548B /* OceanWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5295C9922AC7F7E20066183B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5295C9822AC7F7E10066183B /* ClockWidgetExtension */;
+			targetProxy = 5295C9912AC7F7E20066183B /* PBXContainerItemProxy */;
+		};
+		52C493E82AC7FBF800D1548B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C493DB2AC7FBF700D1548B /* WeekDayWidgetExtension */;
+			targetProxy = 52C493E72AC7FBF800D1548B /* PBXContainerItemProxy */;
+		};
+		52C494002AC80DD900D1548B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C493F32AC80DD800D1548B /* OceanWidgetExtension */;
+			targetProxy = 52C493FF2AC80DD900D1548B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5295C97A2AC7F7720066183B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5295C97B2AC7F7720066183B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5295C97D2AC7F7720066183B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5295C97E2AC7F7720066183B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5295C9952AC7F7E20066183B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.ClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5295C9962AC7F7E20066183B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.ClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52C493EB2AC7FBF800D1548B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeekDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeekDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.WeekDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C493EC2AC7FBF800D1548B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeekDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeekDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.WeekDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52C494022AC80DD900D1548B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OceanWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OceanWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.OceanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C494032AC80DD900D1548B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OceanWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OceanWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ForKeyNote.DemoWidget.OceanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5295C9692AC7F7710066183B /* Build configuration list for PBXProject "DemoWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5295C97A2AC7F7720066183B /* Debug */,
+				5295C97B2AC7F7720066183B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5295C97C2AC7F7720066183B /* Build configuration list for PBXNativeTarget "DemoWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5295C97D2AC7F7720066183B /* Debug */,
+				5295C97E2AC7F7720066183B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5295C9942AC7F7E20066183B /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5295C9952AC7F7E20066183B /* Debug */,
+				5295C9962AC7F7E20066183B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C493EA2AC7FBF800D1548B /* Build configuration list for PBXNativeTarget "WeekDayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C493EB2AC7FBF800D1548B /* Debug */,
+				52C493EC2AC7FBF800D1548B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C494042AC80DD900D1548B /* Build configuration list for PBXNativeTarget "OceanWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C494022AC80DD900D1548B /* Debug */,
+				52C494032AC80DD900D1548B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5295C9662AC7F7710066183B /* Project object */;
+}
